@@ -29,3 +29,9 @@ GitHub Pages: `main` 브랜치의 저장소 루트(`/`). 프로젝트 CNAME 없�
 ## 제작 및 저작권
 
 코드·설명·예제·아이콘·대표 이미지를 직접 작성했습니다. 외부 교재 본문·도판·코드는 포함하지 않습니다. 참고 자료와 물리상수의 출처·채택 버전은 [SOURCES.md](SOURCES.md)에 기록했습니다. 자체 제작물은 [MIT](LICENSE) 라이선스입니다. 공급자 분석·광고 스크립트는 해당 서비스 조건을 따릅니다.
+
+## Static languages
+
+Korean (existing root), English (`en/`), Spanish (`es/`), Simplified Chinese (`zh/`), Japanese (`ja/`) and German (`de/`). Each page has its own canonical URL, reciprocal hreflang, localized metadata, interface, validation messages and preview image. The language links work without JavaScript. Calculation code is shared and no runtime translation API is used.
+
+Edit `localization/*.json` for text, `src/template.html` for the shared page, and run `python scripts/build-locales.py`. Run `python scripts/build-locales.py --check` and `npm test` before publishing. Decimal commas are accepted in Spanish and German; thousands separators are not supported.

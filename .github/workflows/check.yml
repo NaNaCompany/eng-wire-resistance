@@ -13,3 +13,5 @@ jobs:
       - run: node --test tests/*.test.mjs
       - run: node --check app.js
       - run: git diff --check
+      - name: Verify generated language pages
+        run: python3 scripts/build-locales.py --check
